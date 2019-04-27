@@ -1,0 +1,9 @@
+{
+	"base":"C:\Users\leejunghun\gitproject\app-copy5\0422cordovaApps/base",
+	"repeat":10,
+	"copy_folder":true,
+	"target":["config.xml","www/js/index.js","copy-splash.bat"
+	,"Splash.java","AndroidManifest.xml","copy-manifest.bat"],
+	"replace":[["Miss&Mr","꽃중년만남","돌싱스캔들","부킹채팅","블랙채팅","블랙톡","오늘밤주인공","일상탈출","중년스캔들","중년즐톡"],
+	["atree3","monstere3","complaaa","tekking8ab2","zerosum125ring","atreeking1","mobtt2323k","r89ironman","brownking","zerosum1g"]]
+}

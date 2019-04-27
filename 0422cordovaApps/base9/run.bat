@@ -1,0 +1,1 @@
+cd %CD% && cordova run android && cd ..
