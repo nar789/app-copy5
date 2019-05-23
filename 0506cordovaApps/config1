@@ -1,0 +1,9 @@
+{
+	"base":"C:\Users\leejunghun\gitproject\app-copy5\0506cordovaApps/base",
+	"repeat":3,
+	"copy_folder":true,
+	"target":["config.xml","www/js/index.js","copy-splash.bat"
+	,"Splash.java","AndroidManifest.xml","copy-manifest.bat"],
+	"replace":[["럽스타챗","비밀연애","중년채팅"],
+	["dran3see3","pra3nse3","qur3ansa"]]
+}

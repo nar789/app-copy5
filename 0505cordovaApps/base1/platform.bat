@@ -1,0 +1,1 @@
+cd %~dp0 && cordova platform add android && cd ..

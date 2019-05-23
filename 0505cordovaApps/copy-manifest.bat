@@ -1,0 +1,1 @@
+cd base1 && copy-manifest.bat && cd .. && cd base2 && copy-manifest.bat && cd .. && cd base3 && copy-manifest.bat && cd .. && cd base4 && copy-manifest.bat && cd .. && cd base5 && copy-manifest.bat && cd .. && cd base6 && copy-manifest.bat && cd .. && cd base7 && copy-manifest.bat && cd .. && cd base8 && copy-manifest.bat && cd .. && cd base9 && copy-manifest.bat && cd ..

@@ -1,0 +1,1 @@
+cd base1 && copy-splash.bat && cd .. && cd base2 && copy-splash.bat && cd .. && cd base3 && copy-splash.bat && cd .. && cd base4 && copy-splash.bat && cd .. && cd base5 && copy-splash.bat && cd .. && cd base6 && copy-splash.bat && cd .. && cd base7 && copy-splash.bat && cd .. && cd base8 && copy-splash.bat && cd .. && cd base9 && copy-splash.bat && cd ..

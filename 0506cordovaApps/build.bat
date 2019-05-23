@@ -1,0 +1,1 @@
+cd base1 && build.bat && cd .. && cd base2 && build.bat && cd .. && cd base3 && build.bat && cd .. 
