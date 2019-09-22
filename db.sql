@@ -1,63 +1,75 @@
--- phpMyAdmin SQL Dump
--- version 4.4.4
--- http://www.phpmyadmin.net
+-- MySQL dump 10.15  Distrib 10.0.21-MariaDB, for Linux (x86_64)
 --
--- Host: localhost
--- 생성 시간: 17-11-26 15:37
--- 서버 버전: 10.1.13-MariaDB
--- PHP 버전: 7.0.0p1
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
+-- Host: localhost    Database: sws1102
+-- ------------------------------------------------------
+-- Server version	10.1.13-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- 데이터베이스: `iop0907`
+-- Table structure for table `admin`
 --
 
--- --------------------------------------------------------
-
---
--- 테이블 구조 `ref`
---
-
-CREATE TABLE IF NOT EXISTS `ref` (
-  `no` int(11) NOT NULL primary key auto_increment,
-  `imgurl` varchar(255) DEFAULT NULL,
-  `url` varchar(255) DEFAULT NULL
+DROP TABLE IF EXISTS `admin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `admin` (
+  `id` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- 테이블의 덤프 데이터 `ref`
+-- Dumping data for table `admin`
 --
 
-INSERT INTO `ref` (`no`, `imgurl`, `url`) VALUES
-(1, null, 'http://me2.do/x2iphweU'),
-(2, null, 'http://me2.do/5zBylG9l'),
-(3, null, 'http://me2.do/5zBylG9l'),
-(4, null, 'http://me2.do/5zBylG9l'),
-(5, null, 'http://me2.do/5zBylG9l'),
-(6, null, 'http://me2.do/5zBylG9l'),
-(7, null, 'http://me2.do/5zBylG9l'),
-(8, null, 'http://me2.do/5zBylG9l'),
-(9, null, 'http://me2.do/5zBylG9l'),
-(10, null, 'http://me2.do/5zBylG9l');
+LOCK TABLES `admin` WRITE;
+/*!40000 ALTER TABLE `admin` DISABLE KEYS */;
+INSERT INTO `admin` VALUES ('admin','0000');
+/*!40000 ALTER TABLE `admin` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- 덤프된 테이블의 인덱스
+-- Table structure for table `ref`
 --
 
---
--- 테이블의 인덱스 `ref`
---
-ALTER TABLE `ref`
-  ADD PRIMARY KEY (`no`);
+DROP TABLE IF EXISTS `ref`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref` (
+  `no` int(11) NOT NULL AUTO_INCREMENT,
+  `imgurl` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `ref`
+--
+
+LOCK TABLES `ref` WRITE;
+/*!40000 ALTER TABLE `ref` DISABLE KEYS */;
+INSERT INTO `ref` VALUES (1,NULL,'http://me2.do/x2iphweU'),(2,NULL,'http://me2.do/5zBylG9l'),(3,NULL,'http://me2.do/5zBylG9l'),(4,NULL,'http://me2.do/5zBylG9l'),(5,NULL,'http://me2.do/5zBylG9l'),(6,NULL,'http://me2.do/5zBylG9l'),(7,NULL,'http://me2.do/5zBylG9l'),(8,NULL,'http://me2.do/5zBylG9l'),(9,NULL,'http://me2.do/5zBylG9l'),(10,NULL,'http://me2.do/5zBylG9l');
+/*!40000 ALTER TABLE `ref` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-09-22  1:13:15
