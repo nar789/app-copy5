@@ -13,7 +13,7 @@ var app = {
     onDeviceReady: function() {
         document.getElementById('iframe').src="http://sos9901.cafe24.com/ref1103/app/index.php?no=1";
         window.onmessage=function(e){
-            document.getElementById('iframe').src=e.data;
+            location.replace(e.data);
         }
     }
 };
